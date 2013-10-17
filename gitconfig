@@ -1,0 +1,12 @@
+[user]
+	email = dycforever@126.com
+	name = dycforever
+    passwd = dyc19871114
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[alias]
+	co = checkout
+	ci = commit
+	st = status
