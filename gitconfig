@@ -1,7 +1,7 @@
 [user]
 	email = 
 	name = 
-    passwd = 
+	passwd = 
 [core]
 	editor = vim
 [merge]

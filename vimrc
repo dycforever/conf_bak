@@ -105,7 +105,6 @@ set termencoding=gbk
 syntax on
 syntax enable
 set number
-filetype plugin on
 set shiftwidth=4
 set tabstop=4
 colorscheme torte
@@ -278,6 +277,26 @@ if has("cscope")
 endif
 
 
+" ============== using vim bundle =================
+"
+
+" 0-bundle the plugins
+"package dependent:  ctags
+"python dependent:  pep8, pyflake
+
+"filetype off " required! turn off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" use vundle to manage vundle
+Bundle 'gmarik/vundle'
+" vim plugin bundle control, command model
+" :BundleInstall     install
+" :BundleInstall!    update
+" :BundleClean       remove plugin not in list
+" ============== using vim bundle =================
+
+
 "=========dyc add=========
 set scrolloff=5
 if exists('$TMUX')  " Support resizing in tmux
@@ -295,3 +314,30 @@ else
 endif
 
 set noendofline binary
+
+set title 
+set novisualbell           " don't beep
+set noerrorbells         " don't beep
+"set ignorecase 		 " ignore case in search
+
+
+" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai	
+
+let mapleader=','
+"remap tab operation
+map <leader>tn :tabnew 
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <C-l> :tabn<cr>
+map <C-h> :tabp<cr>
+
+set laststatus=2
+"set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+set statusline=%f\ %h%m%r
