@@ -296,6 +296,9 @@ Bundle 'gmarik/vundle'
 " :BundleClean       remove plugin not in list
 " ============== using vim bundle =================
 
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
 
 "=========dyc add=========
 set scrolloff=5
@@ -341,3 +344,4 @@ map <C-h> :tabp<cr>
 set laststatus=2
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 set statusline=%f\ %h%m%r
+let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
