@@ -21,6 +21,8 @@ flags = [
     '.',
     '-isystem',
     '/usr/include/c++/4.8/'
+    '-isystem',
+    '/usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include/g++-v4/'
 ]
 
 if compilation_database_folder:

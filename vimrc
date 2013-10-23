@@ -345,3 +345,6 @@ set laststatus=2
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 set statusline=%f\ %h%m%r
 let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
+" jump to the definition of function 
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
