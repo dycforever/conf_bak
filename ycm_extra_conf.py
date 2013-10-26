@@ -19,6 +19,12 @@ flags = [
     'c++',
     '-I',
     '.',
+    '-I',
+    '/home/dyc/program/netlib/include/',
+    '-I',
+    '/home/dyc/program/common/',
+    '-I',
+    '/usr/include',
     '-isystem',
     '/usr/include/c++/4.8/'
     '-isystem',

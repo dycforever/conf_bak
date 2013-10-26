@@ -101,22 +101,7 @@ set fileencodings=utf-8,gbk,latin1
 set fileencoding=gbk
 set termencoding=gbk
 
-"============below is baidu's example=============== 
-syntax on
-syntax enable
-set number
-set shiftwidth=4
-set tabstop=4
-colorscheme torte
-"set foldmethod=syntax
-function! CHANGE_CURR_DIR()
-	let _dir=expand("%:p:h")
-	exec "cd " . _dir
-	unlet _dir
-endfunction
-autocmd BufEnter * call CHANGE_CURR_DIR()
-set ts=4
-set expandtab
+
 "===================plugin ========================
 "set tags=/home/dyc/srcReading/apr-1.4.6/tags
 set tags=/home/dyc/srcReading/apr-1.4.6/tags
@@ -348,3 +333,17 @@ let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
 " jump to the definition of function 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+syntax enable
+set number
+set shiftwidth=4
+set tabstop=4
+set ts=4
+set expandtab
+colorscheme torte
+"set foldmethod=syntax
+function! CHANGE_CURR_DIR()
+	let _dir=expand("%:p:h")
+	exec "cd " . _dir
+	unlet _dir
+endfunction
+autocmd BufEnter * call CHANGE_CURR_DIR()
