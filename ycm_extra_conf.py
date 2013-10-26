@@ -23,12 +23,8 @@ flags = [
     '/home/dyc/program/netlib/include/',
     '-I',
     '/home/dyc/program/common/',
-    '-I',
-    '/usr/include',
     '-isystem',
-    '/usr/include/c++/4.8/'
-    '-isystem',
-    '/usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include/g++-v4/'
+    '/usr/include'
 ]
 
 if compilation_database_folder:
