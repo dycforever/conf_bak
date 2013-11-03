@@ -111,6 +111,7 @@ set completeopt=longest,menu
 
 let g:winManagerWindowLayout='TagList|FileExplorer'
 nmap wm :WMToggle<CR>
+nmap <F2> :SyntasticCheck off<CR>
 
 nnoremap <silent> <F12> :A<CR>
 nnoremap <silent> <F3> :Grep<CR
@@ -136,16 +137,15 @@ if has("cscope")
     set csto=0
 
     " add any cscope database in current directory
-    if filereadable("/home/dyc/srcReading/apr-1.4.6/cscope.out")
-        cs add /home/dyc/srcReading/apr-1.4.6/cscope.out /home/dyc/srcReading/apr-1.4.6  
-        "/home/dyc/srcReading/apr-1.4.6 
-    " else add the database pointed to by environment variable 
-    elseif $CSCOPE_DB != ""
-        cs add $CSCOPE_DB
-    endif
-
-    " show msg when any other cscope db added
-    set cscopeverbose  
+"    if filereadable("/home/dyc/sourceRead/linux-2.6.24/cscope.out2")
+"        cs add /home/dyc/sourceRead/linux-2.6.24/cscope.out /home/dyc/sourceRead/linux-2.6.24
+"    " else add the database pointed to by environment variable 
+"    elseif $CSCOPE_DB != ""
+"        cs add $CSCOPE_DB
+"    endif
+"
+"    " show msg when any other cscope db added
+"    set cscopeverbose  
 
 
     """"""""""""" My cscope/vim key mappings
@@ -205,14 +205,14 @@ if has("cscope")
     " can be simulated roughly via:
     "    nmap <C-@>s <C-W><C-S> :cs find s <C-R>=expand("<cword>")<CR><CR>	
 
-    nmap <C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@>t :scs find t <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@>e :scs find e <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@>f :scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
-    nmap <C-@>d :scs find d <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>t :scs find t <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>e :scs find e <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>f :scs find f <C-R>=expand("<cfile>")<CR><CR>	
+    nmap <C-@><C-@>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-@><C-@>d :scs find d <C-R>=expand("<cword>")<CR><CR>	
 
 
     " Hitting CTRL-space *twice* before the search type does a vertical 
@@ -221,14 +221,14 @@ if has("cscope")
     " (Note: you may wish to put a 'set splitright' in your .vimrc
     " if you prefer the new window on the right instead of the left
 
-    nmap <C-@><C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
-    nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
+    nmap <C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
     """"""""""""" key map timeouts
@@ -269,7 +269,7 @@ endif
 "package dependent:  ctags
 "python dependent:  pep8, pyflake
 
-"filetype off " required! turn off
+filetype off " required! turn off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -284,6 +284,12 @@ Bundle 'gmarik/vundle'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+
+filetype plugin indent on
+
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_ignore_files=['^/usr/lib/', '\c\.h$', 'vector', 'bits/c++config.h']
 
 "=========dyc add=========
 set scrolloff=5
