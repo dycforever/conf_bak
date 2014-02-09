@@ -9,3 +9,8 @@
 #  vim and :BundleInstall or:
 #vim +BundleInstall +qall
 #cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+
+#apt-get install tmux
+
+#for mp3/media player
+sudo apt-get install ubuntu-restricted-extras
