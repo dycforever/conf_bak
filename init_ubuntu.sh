@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#apt-get install vim
-#apt-get install git
-#apt-get install cmake
-#apt-get install g++
-#apt-get install  python-dev
+#sudo apt-get install vim
+#sudo apt-get install git
+#sudo apt-get install cmake
+#sudo apt-get install g++
+#sudo apt-get install  python-dev
 #git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #  vim and :BundleInstall or:
 #vim +BundleInstall +qall
 #cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
-#apt-get install tmux
+#sudo apt-get install tmux
 #sudo apt-get install openssh-server
 
 # for mp3/media player
