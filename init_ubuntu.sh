@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #sudo apt-get install vim
-#sudo apt-get install ctags
+#sudo apt-get install ctags cscope
 #sudo apt-get install git
 #sudo apt-get install cmake
 #sudo apt-get install g++
@@ -31,4 +31,4 @@
 
 # for haskell
 #
-sudo apt-get install ghc 
+#sudo apt-get install ghc 
