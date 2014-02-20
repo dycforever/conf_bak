@@ -96,10 +96,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-set encoding=gbk
+set encoding=utf-8
 set fileencodings=utf-8,gbk,latin1
-set fileencoding=gbk
-set termencoding=gbk
+set fileencoding=utf-8
+set termencoding=utf-8
 
 
 "===================plugin ========================
