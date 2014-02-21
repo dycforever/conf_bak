@@ -32,3 +32,10 @@
 # for haskell
 #
 #sudo apt-get install ghc 
+
+
+# for clang-llvm
+#sudo apt-get install clang llvm 
+
+# sudo apt-get install mysql
+
