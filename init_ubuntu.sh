@@ -41,4 +41,4 @@
 
 # Chinese input 
 #
-# sudo apt-get install fcitx-pinyin
+# sudo apt-get install fcitx-pinyin im-switch
