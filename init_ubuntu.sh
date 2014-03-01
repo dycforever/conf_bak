@@ -35,7 +35,10 @@
 
 
 # for clang-llvm
-#sudo apt-get install clang llvm 
+# sudo apt-get install clang llvm 
 
 # sudo apt-get install mysql
 
+# Chinese input 
+#
+# sudo apt-get install fcitx-pinyin
