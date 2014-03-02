@@ -49,5 +49,19 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # for php-mysql extention
 #
-#apt-get install php5-gd 
-#apt-get install php5-mysql
+#sudo $INSTALL_CMD php5-gd 
+#sudo $INSTALL_CMD php5-mysql
+
+
+# for clang-llvm
+#sudo $INSTALL_CMD clang llvm 
+
+# sudo $INSTALL_CMD mysql
+
+# Chinese input 
+#
+# if there is no "language support" item in system setting, run command below :
+# sudo apt-get update && apt-get upgrade
+#sudo $INSTALL_CMD language-selector-gnome
+#
+#sudo $INSTALL_CMD fcitx-pinyin im-switch

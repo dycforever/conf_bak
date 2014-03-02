@@ -16,3 +16,6 @@ export LD_LIBRARY_PATH=/home/dyc/tools/python3-protobuf/lib/:$LD_LIBRARY_PATH
 
 export PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "
 
+export LC_CTYPE="zh_CN.UTF-8"
+export XMODIFIERS="@im=fcitx"
+fcitx
