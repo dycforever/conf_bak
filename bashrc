@@ -18,3 +18,4 @@ export PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\
 
 export LC_CTYPE="zh_CN.UTF-8"
 export XMODIFIERS="@im=fcitx"
+alias ack='ack-grep'

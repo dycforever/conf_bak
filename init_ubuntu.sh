@@ -10,6 +10,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD git
 # sudo $INSTALL_CMD cmake
 # sudo $INSTALL_CMD g++
+# sudo $INSTALL_CMD ack-grep
 # sudo $INSTALL_CMD  python-dev
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
