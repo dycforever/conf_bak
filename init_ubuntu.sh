@@ -62,13 +62,15 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 ## Chinese input 
 #
 ## if there is no "language support" item in system setting, run command below :
-# sudo apt-get update && apt-get upgrade
-# sudo $INSTALL_CMD language-selector-gnome
+#sudo apt-get update && apt-get upgrade
+#sudo $INSTALL_CMD language-selector-gnome
 
 ## if ibus make fcitx launch failed, run command below:
-# killall ibus-daemon
-# sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
-# sudo $INSTALL_CMD fcitx-pinyin im-switch fcitx-googlepinyin
+#killall ibus-daemon
+#sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
+
+## remind !! set XMODIFIERS in gnomerc and bashrc !!
+#sudo $INSTALL_CMD fcitx fcitx-pinyin fcitx-googlepinyin
 
 ## install sogou pinyin
 # sudo add-apt-repository ppa:fcitx-team/nightly
