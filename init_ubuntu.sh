@@ -77,3 +77,5 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo apt-get update
 # sudo $INSTALL_CMD fcitx-sogoupinyin
 
+# for make iputils
+# sudo $INSTALL_CMD libcap-dev
