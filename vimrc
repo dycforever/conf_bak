@@ -353,3 +353,9 @@ function! CHANGE_CURR_DIR()
 	unlet _dir
 endfunction
 autocmd BufEnter * call CHANGE_CURR_DIR()
+
+" 自动括号补全
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
