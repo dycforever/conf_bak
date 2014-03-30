@@ -9,7 +9,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD ctags cscope
 # sudo $INSTALL_CMD git
 # sudo $INSTALL_CMD cmake
-# sudo $INSTALL_CMD libtool
+# sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD g++
 # sudo $INSTALL_CMD ack-grep
 # sudo $INSTALL_CMD  python-dev
