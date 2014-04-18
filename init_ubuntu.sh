@@ -67,8 +67,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 #sudo $INSTALL_CMD language-selector-gnome
 
 ## if ibus make fcitx launch failed, run command below:
-#killall ibus-daemon
-#sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
+# killall ibus-daemon
+# sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
 
 ## remind !! set XMODIFIERS in gnomerc and bashrc !!
 #sudo $INSTALL_CMD fcitx fcitx-pinyin fcitx-googlepinyin
@@ -83,3 +83,5 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # if click buttons on laptop's pad, try command below:
 # echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
+# if can't use wireless, try this:
+# sudo apt-get install linux-firmware-nonfree
