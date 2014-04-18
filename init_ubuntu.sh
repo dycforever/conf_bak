@@ -16,8 +16,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 #  vim and :BundleInstall or:
-# vim +BundleInstall +qall
-#cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+# vim +BundleInstall +qall 
+# mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
@@ -80,3 +80,6 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # for make iputils
 # sudo $INSTALL_CMD libcap-dev
+
+# if click buttons on laptop's pad, try command below:
+# echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
