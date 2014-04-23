@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APTGET_OPTIONS="-y"
-#APTGET_OPTIONS=""
+APTGET_OPTIONS=""
 
 INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
@@ -21,6 +21,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
+# sudo $INSTALL_CMD libboost-dev
+
 
 ## for mp3/media player
 #
@@ -80,3 +82,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # for make iputils
 # sudo $INSTALL_CMD libcap-dev
+
+# for network traffic monitor
+ sudo $INSTALL_CMD sysstat iftop vnstat
+
