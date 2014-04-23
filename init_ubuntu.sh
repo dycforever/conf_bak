@@ -16,8 +16,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 #  vim and :BundleInstall or:
-# vim +BundleInstall +qall
-#cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+# vim +BundleInstall +qall 
+# mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
@@ -69,8 +69,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 #sudo $INSTALL_CMD language-selector-gnome
 
 ## if ibus make fcitx launch failed, run command below:
-#killall ibus-daemon
-#sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
+# killall ibus-daemon
+# sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
 
 ## remind !! set XMODIFIERS in gnomerc and bashrc !!
 #sudo $INSTALL_CMD fcitx fcitx-pinyin fcitx-googlepinyin
@@ -82,7 +82,13 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # for make iputils
 # sudo $INSTALL_CMD libcap-dev
-
 # for network traffic monitor
- sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD sysstat iftop vnstat
+
+# if click buttons on laptop's pad, try command below:
+# echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
+# if can't use wireless, try this:
+# sudo apt-get install linux-firmware-nonfree
+
+
 
