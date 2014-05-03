@@ -97,7 +97,7 @@ if !exists(":DiffOrig")
 endif
 
 set encoding=utf-8
-set fileencodings=utf-8,gbk,latin1
+set fileencodings=utf-8,gb2312,gbk,latin1
 set fileencoding=utf-8
 set termencoding=utf-8
 
@@ -221,14 +221,14 @@ if has("cscope")
     " (Note: you may wish to put a 'set splitright' in your .vimrc
     " if you prefer the new window on the right instead of the left
 
-    nmap <C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
-    nmap <C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-f>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
+    nmap <C-f>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-f>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
     """"""""""""" key map timeouts
@@ -282,13 +282,13 @@ Bundle 'gmarik/vundle'
 " ============== using vim bundle =================
 
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
 let g:syntastic_check_on_open=1
-let g:syntastic_auto_loc_list=1
+let g:syntastic_auto_loc_list=2
 let g:syntastic_ignore_files=['^/usr/lib/', '\c\.h$', 'vector', 'bits/c++config.h']
 
 "=========dyc add=========
@@ -335,9 +335,10 @@ map <C-h> :tabp<cr>
 set laststatus=2
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 set statusline=%f\ %h%m%r
-let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
+
+"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
 " jump to the definition of function 
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 syntax enable
 set number
