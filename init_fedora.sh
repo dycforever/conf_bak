@@ -29,7 +29,7 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD sysstat iftop vnstat
 
 ## lua-jit for nginx
-#sudo $INSTALL_CMD luajit.x86_64 luajit-devel.x86_64
+# sudo $INSTALL_CMD luajit.x86_64 luajit-devel.x86_64
 
 ## for mp3/media player
 #
