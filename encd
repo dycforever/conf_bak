@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+import argparse
+import sys
+import urllib;
+
+
+parser = argparse.ArgumentParser(description='url encode/decode tool')
+parser.add_argument("-d", "--decode", help="url decode", action="store_true")
+parser.add_argument("str", help="input string")
+
+
+args = parser.parse_args()
+if args.decode:
+    print urllib.unquote(args.str)
+else:
+    print urllib.quote(args.str)
+
