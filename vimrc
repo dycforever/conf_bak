@@ -359,5 +359,5 @@ autocmd BufEnter * call CHANGE_CURR_DIR()
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
-inoremap < <><ESC>i
 inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
