@@ -21,7 +21,8 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
-# sudo $INSTALL_CMD boost boost-devel boost-doc
+sudo $INSTALL_CMD boost boost-devel boost-doc
+sudo $INSTALL_CMD scons
 
 # for make iputils
 # sudo $INSTALL_CMD libcap libcap-devel
