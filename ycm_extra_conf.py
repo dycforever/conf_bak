@@ -23,6 +23,8 @@ flags = [
     '/home/dyc/program/netlib/include/',
     '-I',
     '/home/dyc/program/common/',
+    '-I',
+    '/home/dyc/tools/zlib-1.2.8/',
     '-isystem',
     '/usr/include'
 ]

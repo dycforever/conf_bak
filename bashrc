@@ -10,8 +10,8 @@ alias la='ls --color=auto -aF'
 alias ll='ls --color=auto -alF'
 alias grep='grep --color'
 alias php-fpm='php-fpm -y ~/github/conf_bak/php-fpm.conf'
-alias php-fpm='php-fpm -y ~/github/conf_bak/php-fpm.conf'
 alias restart_fpm='kill -USR2 `cat ~/runtime/php-fpm/php-fpm.pid`'
+alias vi=vim
 
 export PYTHONPATH=/home/dyc/tools/python3-protobuf_src/python:$PYTHONPATH
 export PATH=/home/dyc/tools/python3-protobuf/bin:$PATH
