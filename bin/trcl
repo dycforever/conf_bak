@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+if [ $# -ne 3 ];
+then
+    echo "usage: trcl filename start_line end_line"
+    exit 1
+fi
+
+sed -n "$2,$3p" "$1" 

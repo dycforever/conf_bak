@@ -1,0 +1,22 @@
+#!/usr/local/bash
+
+if [ $# -lt 1 ]; then
+    echo "usage: $0 process_name"
+    exit 1
+fi
+
+lineCount=`ps -ef | grep -w $1 | grep -v grep | grep -v $0 | grep -v master | wc -l`
+
+if [ $lineCount -ne 1 ]; then
+    echo "found $lineCount lines"
+    exit 1
+fi
+
+pid=`ps -ef | grep -w $1 | grep -v grep | grep -v $0 | grep -v master | awk '{print $2}'`
+echo "$1 pid is $pid"
+
+if [ $# -gt 1 ]; then
+    gdb $2 -p $pid
+else
+    gdb $1 -p $pid
+fi
