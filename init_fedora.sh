@@ -5,7 +5,7 @@ APTGET_OPTIONS=""
 
 INSTALL_CMD="yum install $APTGET_OPTIONS"
 
-# sudo $INSTALL_CMD vim
+# sudo $INSTALL_CMD vim-enhanced
 # sudo $INSTALL_CMD ctags cscope
 # sudo $INSTALL_CMD git
 # sudo $INSTALL_CMD cmake
@@ -19,10 +19,13 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # vim +BundleInstall +qall 
 # mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
+# sudo $INSTALL_CMD gnome-tweak-tool
+# sudo $INSTALL_CMD google-chrome-stable
+
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
-sudo $INSTALL_CMD boost boost-devel boost-doc
-sudo $INSTALL_CMD scons
+# sudo $INSTALL_CMD boost boost-devel boost-doc
+# sudo $INSTALL_CMD scons
 
 # for make iputils
 # sudo $INSTALL_CMD libcap libcap-devel
@@ -72,14 +75,4 @@ sudo $INSTALL_CMD scons
 
 ## Chinese input 
 #
-## if there is no "language support" item in system setting, run command below :
-#sudo apt-get update && apt-get upgrade
-#sudo $INSTALL_CMD language-selector-gnome
-
-## if ibus make fcitx launch failed, run command below:
-# killall ibus-daemon
-# sudo apt-get purge ibus ibus-gtk ibus-gtk3 ibus-pinyin* ibus-sunpinyin
-
-## remind !! set XMODIFIERS in gnomerc and bashrc !!
-#sudo $INSTALL_CMD fcitx fcitx-pinyin fcitx-googlepinyin
 
