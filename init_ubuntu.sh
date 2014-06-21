@@ -1,7 +1,7 @@
 #!/bin/bash
 
-APTGET_OPTIONS="-y"
 APTGET_OPTIONS=""
+APTGET_OPTIONS="-y"
 
 INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
@@ -14,11 +14,11 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD ack-grep
 # sudo $INSTALL_CMD  python-dev python3
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-#  vim and :BundleInstall or:
+# 
+# # vim and :BundleInstall or:
 # vim +BundleInstall +qall 
 # mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
-
+# 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
 # sudo $INSTALL_CMD libboost-dev
@@ -89,6 +89,4 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
 # if can't use wireless, try this:
 # sudo apt-get install linux-firmware-nonfree
-
-
 
