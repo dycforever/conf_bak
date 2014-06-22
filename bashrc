@@ -12,10 +12,12 @@ alias grep='grep --color'
 alias php-fpm='php-fpm -y ~/github/conf_bak/php-fpm.conf'
 alias restart_fpm='kill -USR2 `cat ~/runtime/php-fpm/php-fpm.pid`'
 alias vi=vim
+alias rm="rm -rf"
 
 export PYTHONPATH=/home/dyc/tools/python3-protobuf_src/python:$PYTHONPATH
 export PATH=/home/dyc/tools/python3-protobuf/bin:$PATH
 export LD_LIBRARY_PATH=/home/dyc/tools/python3-protobuf/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
 export PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "
 

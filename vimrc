@@ -282,14 +282,28 @@ Bundle 'gmarik/vundle'
 " ============== using vim bundle =================
 
 Bundle 'vim-scripts/taglist.vim'
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
+Bundle 'Valloric/YouCompleteMe'
+
+"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
+"""" disable ycm 
+"let g:ycm_auto_trigger=0
+"""" don't ask before loading
+let g:ycm_confirm_extra_conf=0
 
 filetype plugin indent on
 
-let g:syntastic_check_on_open=1
-let g:syntastic_auto_loc_list=2
-let g:syntastic_ignore_files=['^/usr/lib/', '\c\.h$', 'vector', 'bits/c++config.h']
+
+let mapleader=','
+"remap tab operation
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <C-l> :tabn<cr>
+map <C-h> :tabp<cr>
+" jump to the definition of function 
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+
 
 "=========dyc add=========
 set scrolloff=5
@@ -324,21 +338,9 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai	
 
-let mapleader=','
-"remap tab operation
-map <leader>tn :tabnew 
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <C-l> :tabn<cr>
-map <C-h> :tabp<cr>
-
 set laststatus=2
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 set statusline=%f\ %h%m%r
-
-"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
-" jump to the definition of function 
-"nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 syntax enable
 set number
@@ -360,4 +362,3 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap " ""<ESC>i
-inoremap ' ''<ESC>i

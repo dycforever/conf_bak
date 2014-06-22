@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# NOTICE!! 
+# problem 1: apt-get update failed with 'failed to fetch xxx package: ... hash sum mismatch'
+# solution : edit /etc/apt/sources.list, comments line with 'dev http://extra.ubuntu.com'
+
 APTGET_OPTIONS=""
 APTGET_OPTIONS="-y"
 
@@ -15,13 +19,21 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD  python-dev python3
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # 
-# # vim and :BundleInstall or:
+## vim and :BundleInstall or:
 # vim +BundleInstall +qall 
-# mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+
 # 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
 # sudo $INSTALL_CMD libboost-dev
+
+# sudo $INSTALL_CMD scons
+
+# for make iputils
+# sudo $INSTALL_CMD libcap-dev
+# for network traffic monitor
+# sudo $INSTALL_CMD sysstat iftop vnstat
+
 
 
 ## for mp3/media player
@@ -79,11 +91,6 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo add-apt-repository ppa:fcitx-team/nightly
 # sudo apt-get update
 # sudo $INSTALL_CMD fcitx-sogoupinyin
-
-# for make iputils
-# sudo $INSTALL_CMD libcap-dev
-# for network traffic monitor
-# sudo $INSTALL_CMD sysstat iftop vnstat
 
 # if click buttons on laptop's pad, try command below:
 # echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
