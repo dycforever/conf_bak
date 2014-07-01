@@ -12,8 +12,8 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD gcc-c++
 # sudo $INSTALL_CMD ack
-# sudo $INSTALL_CMD  python-dev python3
-# git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+# sudo $INSTALL_CMD  python-devel python3
+# git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 ## vim and :BundleInstall or:
 # vim +BundleInstall +qall 
@@ -31,6 +31,7 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libcap libcap-devel
 # for network traffic monitor
 # sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD nmap
 
 ## lua-jit for nginx
 # sudo $INSTALL_CMD luajit.x86_64 luajit-devel.x86_64
