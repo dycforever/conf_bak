@@ -21,6 +21,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # 
 ## vim and :BundleInstall or:
 # vim +BundleInstall +qall 
+cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 # 
 # sudo $INSTALL_CMD tmux
@@ -31,8 +32,10 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # for make iputils
 # sudo $INSTALL_CMD libcap-dev
+
 # for network traffic monitor
 # sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD snort
 
 # sudo $INSTALL_CMD socat netcat
 # sudo $INSTALL_CMD libnetfilter-queue-dev
@@ -99,4 +102,6 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # echo options psmouse proto=exps > /etc/modprobe.d/psmouse.modprobe
 # if can't use wireless, try this:
 # sudo apt-get install linux-firmware-nonfree
+
+netpbm
 
