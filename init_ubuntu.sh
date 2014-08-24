@@ -34,7 +34,10 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # for network traffic monitor
 # sudo $INSTALL_CMD sysstat iftop vnstat
 
+# sudo $INSTALL_CMD socat netcat
+# sudo $INSTALL_CMD libnetfilter-queue-dev
 
+# sudo $INSTALL_CMD libgoogle-perftools-dev
 
 ## for mp3/media player
 #
