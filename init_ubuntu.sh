@@ -103,5 +103,7 @@ cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 # if can't use wireless, try this:
 # sudo apt-get install linux-firmware-nonfree
 
-netpbm
+# for image 
+# netpbm
 
+# sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils
