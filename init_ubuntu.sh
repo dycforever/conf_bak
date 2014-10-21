@@ -27,7 +27,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
 # sudo $INSTALL_CMD libboost-dev
-sudo $INSTALL_CMD libjsoncpp-dev
+# sudo $INSTALL_CMD libjsoncpp-dev
 
 # sudo $INSTALL_CMD scons
 
