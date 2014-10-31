@@ -16,17 +16,19 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD g++
 # sudo $INSTALL_CMD ack-grep
+# sudo $INSTALL_CMD valgrind
 # sudo $INSTALL_CMD  python-dev python3
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # 
 ## vim and :BundleInstall or:
 # vim +BundleInstall +qall 
-cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+# cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 # 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
 # sudo $INSTALL_CMD libboost-dev
+# sudo $INSTALL_CMD libjsoncpp-dev
 
 # sudo $INSTALL_CMD scons
 
@@ -37,7 +39,10 @@ cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 # sudo $INSTALL_CMD sysstat iftop vnstat
 # sudo $INSTALL_CMD snort
 
+# sudo $INSTALL_CMD socat netcat
+# sudo $INSTALL_CMD libnetfilter-queue-dev
 
+# sudo $INSTALL_CMD libgoogle-perftools-dev
 
 ## for mp3/media player
 #
@@ -100,5 +105,7 @@ cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 # if can't use wireless, try this:
 # sudo apt-get install linux-firmware-nonfree
 
-netpbm
+# for image 
+# netpbm
 
+# sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils

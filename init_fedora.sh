@@ -13,6 +13,7 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD gcc-c++
 # sudo $INSTALL_CMD man-pages
 # sudo $INSTALL_CMD ack
+# sudo $INSTALL_CMD valgrind
 # sudo $INSTALL_CMD  python-devel python3
 # git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
