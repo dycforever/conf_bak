@@ -16,6 +16,7 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD g++
 # sudo $INSTALL_CMD ack-grep
+# sudo $INSTALL_CMD manpages manpages-dev
 # sudo $INSTALL_CMD valgrind
 # sudo $INSTALL_CMD  python-dev python3
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -33,16 +34,21 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD scons
 
 # for make iputils
+#
 # sudo $INSTALL_CMD libcap-dev
 
 # for network traffic monitor
+#
 # sudo $INSTALL_CMD sysstat iftop vnstat
 # sudo $INSTALL_CMD snort
-
 # sudo $INSTALL_CMD socat netcat
 # sudo $INSTALL_CMD libnetfilter-queue-dev
 
 # sudo $INSTALL_CMD libgoogle-perftools-dev
+
+# for js/bootstrap
+# sudo $INSTALL_CMD npm
+# npm install -g grunt-cli
 
 ## for mp3/media player
 #
@@ -109,3 +115,5 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # netpbm
 
 # sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils
+
+
