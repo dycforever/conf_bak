@@ -103,8 +103,6 @@ set termencoding=utf-8
 
 
 "===================plugin ========================
-"set tags=/home/dyc/srcReading/apr-1.4.6/tags
-set tags=/home/dyc/srcReading/apr-1.4.6/tags
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 set completeopt=longest,menu
