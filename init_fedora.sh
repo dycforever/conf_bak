@@ -79,3 +79,6 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 ## gperftools digital
 #
 # sudo $INSTALL_CMD graphviz
+
+# sudo $INSTALL_CMD ruby
+
