@@ -116,4 +116,5 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils
 
+# sudo $INSTALL_CMD ruby-full
 
