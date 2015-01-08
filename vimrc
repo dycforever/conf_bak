@@ -360,3 +360,9 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap " ""<ESC>i
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+set wildmenu
+set wildmode=longest:list
+

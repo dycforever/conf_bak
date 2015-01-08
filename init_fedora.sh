@@ -80,5 +80,5 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 #
 # sudo $INSTALL_CMD graphviz
 
-# sudo $INSTALL_CMD ruby
+# sudo $INSTALL_CMD ruby ruby-devel
 

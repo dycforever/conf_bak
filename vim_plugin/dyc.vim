@@ -29,12 +29,15 @@ class Exampler:
         self.currentX = x
         self.currentY = y
         print "I'm at the %s, %s"%(x,y)
-        del vim.current.buffer[:]
-        vim.current.buffer.append("hehe")
-        vim.command(":vsp")
+        #""        del vim.current.buffer[:]
+        #""        vim.current.buffer.append("hehe")
+        vim.command("vsp")
 
         TIMEOUT = vim.eval("g:reddit_apicall_timeout")
         print TIMEOUT
+
+        print vim.current.line
+
     
     def addTheRandomNumInLineEnd(self):
         vim.current.buffer[self.currentX - 1] += random.randint(0,100)
