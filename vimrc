@@ -370,4 +370,4 @@ set wildmode=longest:list
 "" show tab and whitespace in vim
 "set list listchars=tab:→\ ,trail:·
 "
-" ack.vim/NERDTree/BufferExplorer
+" TODO install ack.vim/NERDTree/BufferExplorer
