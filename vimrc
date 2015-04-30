@@ -115,7 +115,7 @@ nnoremap <silent> <F12> :A<CR>
 nnoremap <silent> <F3> :Grep<CR
 map <silent> <F8> :TlistToggle<CR>
 
-set cscopequickfix=s-,c-,d-,i-,t-,e-
+set cscopequickfix=s-,c0,d-,i-,t-,e-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
