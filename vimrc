@@ -281,6 +281,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'mileszs/ack.vim'
 
 "let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
 """" disable ycm 
@@ -366,3 +367,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildmenu
 set wildmode=longest:list
 
+"" show tab and whitespace in vim
+"set list listchars=tab:→\ ,trail:·
+"
+" TODO install ack.vim/NERDTree/BufferExplorer

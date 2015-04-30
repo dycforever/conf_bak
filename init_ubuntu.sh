@@ -40,6 +40,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # for network traffic monitor
 #
 # sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD iperf 
+# sudo $INSTALL_CMD glances
 # sudo $INSTALL_CMD snort
 # sudo $INSTALL_CMD socat netcat
 # sudo $INSTALL_CMD libnetfilter-queue-dev

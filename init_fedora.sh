@@ -8,6 +8,7 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD vim-enhanced
 # sudo $INSTALL_CMD ctags cscope
 # sudo $INSTALL_CMD git
+# sudo $INSTALL_CMD mercurial
 # sudo $INSTALL_CMD cmake
 # sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD gcc-c++
@@ -33,6 +34,8 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libcap libcap-devel
 # for network traffic monitor
 # sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD iperf iproute
+# sudo $INSTALL_CMD glances
 # sudo $INSTALL_CMD nmap
 
 ## lua-jit for nginx
