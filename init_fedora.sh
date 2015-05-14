@@ -34,6 +34,7 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD libcap libcap-devel
 # for network traffic monitor
 # sudo $INSTALL_CMD sysstat iftop vnstat
+# sudo $INSTALL_CMD iperf iproute
 # sudo $INSTALL_CMD glances
 # sudo $INSTALL_CMD nmap
 
