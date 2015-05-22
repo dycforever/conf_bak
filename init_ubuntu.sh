@@ -37,6 +37,8 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 #
 # sudo $INSTALL_CMD libcap-dev
 
+# sudo $INSTALL_CMD linux-common-tools
+
 # for network traffic monitor
 #
 # sudo $INSTALL_CMD sysstat iftop vnstat
