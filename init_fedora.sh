@@ -30,6 +30,8 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD boost boost-devel boost-doc
 # sudo $INSTALL_CMD scons
 
+# sudo $INSTALL_CMD perf
+
 # for make iputils
 # sudo $INSTALL_CMD libcap libcap-devel
 # for network traffic monitor
