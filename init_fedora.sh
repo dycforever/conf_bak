@@ -18,6 +18,9 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD  python-devel python3
 # git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+# for clang-llvm
+# sudo $INSTALL_CMD clang llvm 
+
 ## vim and :BundleInstall or:
 # vim +BundleInstall +qall 
 # mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
@@ -77,8 +80,6 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD php5-mysql
 
 
-## for clang-llvm
-# sudo $INSTALL_CMD clang llvm 
 
 
 ## gperftools digital
