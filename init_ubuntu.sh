@@ -9,25 +9,27 @@ APTGET_OPTIONS="-y"
 
 INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
-# sudo $INSTALL_CMD vim
+## sudo $INSTALL_CMD vim
 # sudo $INSTALL_CMD ctags cscope
 # sudo $INSTALL_CMD git
 # sudo $INSTALL_CMD cmake
 # sudo $INSTALL_CMD libtool automake
 # sudo $INSTALL_CMD g++
+# sudo $INSTALL_CMD curl
 # sudo $INSTALL_CMD ack-grep
 # sudo $INSTALL_CMD manpages manpages-dev
 # sudo $INSTALL_CMD valgrind
-# sudo $INSTALL_CMD  python-dev python3
-# git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-# 
-## vim and :BundleInstall or:
-# vim +BundleInstall +qall 
-# cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
-
-# 
 # sudo $INSTALL_CMD tmux
 # sudo $INSTALL_CMD openssh-server
+# sudo $INSTALL_CMD linux-common-tools
+#
+# git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+### vim and :BundleInstall or:
+# vim +BundleInstall +qall 
+# sudo $INSTALL_CMD python-dev
+#cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer
+
+
 # sudo $INSTALL_CMD libboost-dev
 # sudo $INSTALL_CMD libjsoncpp-dev
 
@@ -36,8 +38,6 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # for make iputils
 #
 # sudo $INSTALL_CMD libcap-dev
-
-# sudo $INSTALL_CMD linux-common-tools
 
 # for network traffic monitor
 #
@@ -54,24 +54,10 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD npm
 # npm install -g grunt-cli
 
-## for mp3/media player
-#
-# sudo $INSTALL_CMD ubuntu-restricted-extras
-# sudo $INSTALL_CMD chmsee
-
-## for python-qt
-# 
-# sudo $INSTALL_CMD qt4-dev-tools qt4-doc qt4-qtconfig qt4-demos qt4-designer qtcreator
-# sudo $INSTALL_CMD libphonon4 libqt4-webkit
-## then download lucid-version libqt4-webkit from http://packages.ubuntu.com/lucid/amd64/libqt4-webkit/download
-## extract .deb and place libqt4-webkit_4.6.2-0ubuntu5.6_amd64/usr/lib/qt4/plugins/designer/libqwebview.so in /usr/share/qt4/plugins/designer
-#
-# sudo $INSTALL_CMD pyqt4-dev-tools
-
 ## for haskell
 #
 # sudo $INSTALL_CMD ghc 
-
+# sudo $INSTALL_CMD ruby-full
 
 ## for database 
 #
@@ -120,5 +106,4 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 
 # sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils
 
-# sudo $INSTALL_CMD ruby-full
 

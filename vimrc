@@ -103,17 +103,7 @@ set termencoding=utf-8
 
 
 "===================plugin ========================
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
 set completeopt=longest,menu
-
-let g:winManagerWindowLayout='TagList|FileExplorer'
-nmap wm :WMToggle<CR>
-nmap <F2> :SyntasticCheck off<CR>
-
-nnoremap <silent> <F12> :A<CR>
-nnoremap <silent> <F3> :Grep<CR
-map <silent> <F8> :TlistToggle<CR>
 
 set cscopequickfix=s-,c0,d-,i-,t-,e-
 
@@ -279,9 +269,16 @@ Bundle 'gmarik/vundle'
 " :BundleClean       remove plugin not in list
 " ============== using vim bundle =================
 
+Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
+Bundle 'grep.vim'
+Bundle 'winmanager'
+Bundle 'bufexplorer.zip'
+Bundle 'Conque-Shell'
 
 "let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
 """" disable ycm 
@@ -294,11 +291,36 @@ filetype plugin indent on
 
 let mapleader=','
 "remap tab operation
+"
+nmap <F2> :SyntasticCheck off<CR>
+
+nnoremap <silent> a A
+nnoremap <silent> <F3> :Grep<CR>
+nmap wm :WMToggle<CR>
+
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+
+let g:tagbar_left = 1
+let g:tagbar_autoshowtag = 1
+
+let g:NERDTree_title='NERD Tree'  
+let g:winManagerWindowLayout='NERDTree|TagList'  
+
+function! NERDTree_Start()  
+    exec 'NERDTree'  
+endfunction  
+      
+function! NERDTree_IsValid()  
+    return 1  
+endfunction 
+
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <C-l> :tabn<cr>
 map <C-h> :tabp<cr>
+
 " jump to the definition of function 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
@@ -347,6 +369,8 @@ set shiftwidth=4
 set tabstop=4
 set ts=4
 set expandtab
+set background=dark
+"colorscheme solarized
 colorscheme torte
 "set foldmethod=syntax
 function! CHANGE_CURR_DIR()
