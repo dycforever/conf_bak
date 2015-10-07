@@ -103,8 +103,7 @@ set termencoding=utf-8
 
 
 "===================plugin ========================
-set completeopt=longest,menu
-
+set completeopt=longest,menu 
 set cscopequickfix=s-,c0,d-,i-,t-,e-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -262,41 +261,44 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " use vundle to manage vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " vim plugin bundle control, command model
 " :BundleInstall     install
 " :BundleInstall!    update
 " :BundleClean       remove plugin not in list
 " ============== using vim bundle =================
 
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/nerdtree'
-Bundle 'mileszs/ack.vim'
-Bundle 'grep.vim'
-Bundle 'winmanager'
-Bundle 'bufexplorer.zip'
-Bundle 'Conque-Shell'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack.vim'
+Plugin 'grep.vim'
+Plugin 'winmanager'
+Plugin 'bufexplorer.zip'
+Plugin 'vim-scripts/Conque-Shell'
+""Plugin 'vim-scripts/Conque-GDB'
 
-"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
-"""" disable ycm 
-"let g:ycm_auto_trigger=0
-"""" don't ask before loading
-let g:ycm_confirm_extra_conf=0
+Plugin 'css_color.vim'
+" remove for conflict with conque-gdb
+"Plugin 'mark'
+Plugin 'javascript.vim'
+Plugin 'mattn/emmet-vim'
+"Plugin 'fatih/vim-go'
 
+"emmet only enable normal mode functions."
+let g:user_emmet_mode='n'
 filetype plugin indent on
 
-
 let mapleader=','
-"remap tab operation
-"
+
 nmap <F2> :SyntasticCheck off<CR>
+nmap wm :WMToggle<CR>
 
 nnoremap <silent> a A
-nnoremap <silent> <F3> :Grep<CR>
-nmap wm :WMToggle<CR>
+nnoremap <silent> <F3> :Rgrep<CR>
+nnoremap <silent> <F1> :ConqueTermVSplit bash<CR>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
@@ -315,16 +317,24 @@ function! NERDTree_IsValid()
     return 1  
 endfunction 
 
+"remap tab operation
+"
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <C-l> :tabn<cr>
 map <C-h> :tabp<cr>
 
-" jump to the definition of function 
+
+"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
+""" disable ycm 
+let g:ycm_auto_trigger=1
+""" don't ask before loading
+let g:ycm_confirm_extra_conf=0
+""jump to the definition of function 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 "=========dyc add=========
 set scrolloff=5
@@ -395,3 +405,4 @@ set wildmode=longest:list
 "set list listchars=tab:→\ ,trail:·
 "
 " TODO install ack.vim/NERDTree/BufferExplorer
+ 

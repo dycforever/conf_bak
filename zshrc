@@ -85,5 +85,6 @@ source $ZSH/oh-my-zsh.sh
 #
 
 export GOROOT=/home/dingyc/tools/go_1.5/
-unsetopt banghist
+#unsetopt banghist
+unsetopt share_history
 
