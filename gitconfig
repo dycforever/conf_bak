@@ -10,3 +10,6 @@
 	co = checkout
 	ci = commit
 	st = status
+
+#[http]
+#    proxy = socks5://127.0.0.1:1080
