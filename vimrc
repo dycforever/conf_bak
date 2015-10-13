@@ -296,7 +296,6 @@ let mapleader=','
 nmap <F2> :SyntasticCheck off<CR>
 nmap wm :WMToggle<CR>
 
-nnoremap <silent> a A
 nnoremap <silent> <F3> :Rgrep<CR>
 nnoremap <silent> <F1> :ConqueTermVSplit bash<CR>
 
