@@ -275,17 +275,19 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'grep.vim'
+Plugin 'a.vim'
 Plugin 'winmanager'
 Plugin 'bufexplorer.zip'
 Plugin 'vim-scripts/Conque-Shell'
-""Plugin 'vim-scripts/Conque-GDB'
 
-Plugin 'css_color.vim'
+""Plugin 'vim-scripts/Conque-GDB'
+""Plugin 'css_color.vim'
+""Plugin 'javascript.vim'
+""Plugin 'mattn/emmet-vim'
+"Plugin 'fatih/vim-go'
+
 " remove for conflict with conque-gdb
 "Plugin 'mark'
-Plugin 'javascript.vim'
-Plugin 'mattn/emmet-vim'
-"Plugin 'fatih/vim-go'
 
 "emmet only enable normal mode functions."
 let g:user_emmet_mode='n'
@@ -293,12 +295,11 @@ filetype plugin indent on
 
 let mapleader=','
 
-nmap <F2> :SyntasticCheck off<CR>
 nmap wm :WMToggle<CR>
 
-nnoremap <silent> a A
-nnoremap <silent> <F3> :Rgrep<CR>
 nnoremap <silent> <F1> :ConqueTermVSplit bash<CR>
+nnoremap <silent> <F2> :BufExplorerVerticalSplit<CR>
+nnoremap <silent> <F3> :Rgrep<CR>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
@@ -326,7 +327,7 @@ map <C-l> :tabn<cr>
 map <C-h> :tabp<cr>
 
 
-"let g:ycm_global_ycm_extra_conf ='/home/dyc/.vim/ycm_extra_conf.py'
+""let g:ycm_global_ycm_extra_conf ='/home/dinyc/.vim/.ycm_extra_conf.py'
 """ disable ycm 
 let g:ycm_auto_trigger=1
 """ don't ask before loading

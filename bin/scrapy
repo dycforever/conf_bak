@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+SCRAPY_HOME="/home/dingyc/github/scrapy"
+import os
+import sys
+sys.path.append(SCRAPY_HOME)
+sys.path.append(os.path.join(SCRAPY_HOME, "third_party/w3lib"))
+sys.path.append(os.path.join(SCRAPY_HOME, "third_party/parsel"))
+sys.path.append(os.path.join(SCRAPY_HOME, "third_party/cssselect"))
+sys.path.append(os.path.join(SCRAPY_HOME, "third_party/queuelib"))
+sys.path.append(os.path.join(SCRAPY_HOME, "third_party/"))
+
+import scrapy.cmdline
+
+scrapy.cmdline.execute(sys.argv)
+
