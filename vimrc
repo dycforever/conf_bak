@@ -270,6 +270,7 @@ Plugin 'gmarik/vundle'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'fatih/vim-go'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
@@ -284,7 +285,6 @@ Plugin 'vim-scripts/Conque-Shell'
 ""Plugin 'css_color.vim'
 ""Plugin 'javascript.vim'
 ""Plugin 'mattn/emmet-vim'
-"Plugin 'fatih/vim-go'
 
 " remove for conflict with conque-gdb
 "Plugin 'mark'
@@ -406,4 +406,8 @@ set wildmode=longest:list
 "set list listchars=tab:→\ ,trail:·
 "
 " TODO install ack.vim/NERDTree/BufferExplorer
+"
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
  
