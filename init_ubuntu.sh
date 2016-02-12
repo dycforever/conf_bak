@@ -23,11 +23,17 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # sudo $INSTALL_CMD openssh-server
 # sudo $INSTALL_CMD linux-common-tools
 #
+# sudo $INSTALL_CMD zsh
+# git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+# cp ./dingyc.zsh-theme ~/.oh-my-zsh/themes
+# chsh -s /bin/zsh 
+
+
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ### vim and :BundleInstall or:
 # vim +BundleInstall +qall 
 # sudo $INSTALL_CMD python-dev
-#cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer
+# mkdir ~/.vim/bundle/YouCompleteMe && cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.py
 
 
 # sudo $INSTALL_CMD libboost-dev
@@ -106,5 +112,6 @@ INSTALL_CMD="apt-get install $APTGET_OPTIONS"
 # netpbm
 
 # sudo apt-get install libimobiledevice-dev libplist-utils ideviceinstaller libimobiledevice-utils
+
 
 
