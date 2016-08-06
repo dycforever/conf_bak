@@ -123,14 +123,6 @@ if has("cscope")
     " if you want the reverse search order.
     set csto=0
 
-    " add any cscope database in current directory
-"    if filereadable("/home/dyc/sourceRead/linux-2.6.24/cscope.out2")
-"        cs add /home/dyc/sourceRead/linux-2.6.24/cscope.out /home/dyc/sourceRead/linux-2.6.24
-"    " else add the database pointed to by environment variable 
-"    elseif $CSCOPE_DB != ""
-"        cs add $CSCOPE_DB
-"    endif
-"
 "    " show msg when any other cscope db added
 "    set cscopeverbose  
 
@@ -283,7 +275,7 @@ Plugin 'vim-scripts/Conque-Shell'
 
 ""Plugin 'vim-scripts/Conque-GDB'
 ""Plugin 'css_color.vim'
-""Plugin 'javascript.vim'
+Plugin 'pangloss/vim-javascript'
 ""Plugin 'mattn/emmet-vim'
 
 " remove for conflict with conque-gdb
@@ -410,4 +402,24 @@ set wildmode=longest:list
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+let g:go_fmt_autosave = 0
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)))
  
+au FileType go nmap <Leader>e <Plug>(go-rename)
+
+
+""let g:javascript_conceal_function   = "ƒ"
+""let g:javascript_conceal_null       = "ø"
+""let g:javascript_conceal_this       = "@"
+""let g:javascript_conceal_return     = "⇚"
+""let g:javascript_conceal_undefined  = "¿"
+""let g:javascript_conceal_NaN        = "ℕ"
+""let g:javascript_conceal_prototype  = "¶"
+""let g:javascript_conceal_static     = "•"
+""let g:javascript_conceal_super      = "Ω"
