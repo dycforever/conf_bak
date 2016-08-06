@@ -57,7 +57,8 @@ INSTALL_CMD="yum install $APTGET_OPTIONS"
 
 ## for haskell
 #
-# sudo $INSTALL_CMD ghc 
+# sudo $INSTALL_CMD epel-release
+# sudo $INSTALL_CMD haskell-platform
 
 
 ## for database 
