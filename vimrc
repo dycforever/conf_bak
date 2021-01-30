@@ -248,9 +248,10 @@ endif
 "package dependent:  ctags
 "python dependent:  pep8, pyflake
 
+set nocompatible
 filetype off " required! turn off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " use vundle to manage vundle
 Plugin 'gmarik/vundle'
@@ -262,9 +263,9 @@ Plugin 'gmarik/vundle'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'grep.vim'
@@ -283,6 +284,8 @@ Plugin 'pangloss/vim-javascript'
 
 "emmet only enable normal mode functions."
 let g:user_emmet_mode='n'
+
+call vundle#end()
 filetype plugin indent on
 
 let mapleader=','
@@ -290,8 +293,8 @@ let mapleader=','
 nmap wm :WMToggle<CR>
 
 nnoremap <silent> <F1> :ConqueTermVSplit bash<CR>
-nnoremap <silent> <F2> :BufExplorerVerticalSplit<CR>
-nnoremap <silent> <F3> :Rgrep<CR>
+nnoremap <silent> <F5> :BufExplorerVerticalSplit<CR>
+nnoremap <silent> <F6> :Rgrep<CR>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
@@ -328,6 +331,7 @@ let g:ycm_confirm_extra_conf=0
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
 
 "=========dyc add=========
 set scrolloff=5
@@ -368,9 +372,9 @@ set statusline=%f\ %h%m%r
 
 syntax enable
 set number
-set shiftwidth=4
-set tabstop=4
-set ts=4
+set shiftwidth=2
+set tabstop=2
+set ts=2
 set expandtab
 set background=dark
 "colorscheme solarized
